@@ -1,0 +1,43 @@
+{
+  "name": "townhouse-las-pircaS",
+  "version": "1.0.0",
+  "description": "Landing page townhouse las pircas",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubasabe/townhouse-las-pircas.git"
+  },
+  "keywords": [
+    "landing"
+  ],
+  "author": "Edu Basabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edubasabe/townhouse-las-pircas/issues"
+  },
+  "homepage": "https://github.com/edubasabe/townhouse-las-pircas#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.17.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "lightbox2": "^2.9.0",
+    "run-sequence": "^1.2.2",
+    "vue": "^2.4.1",
+    "webpack": "^3.5.1"
+  }
+}

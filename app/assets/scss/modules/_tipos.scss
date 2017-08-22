@@ -1,0 +1,105 @@
+.tipos {
+
+  &__image {
+    border: .1rem solid rgba($gris, .3);
+    display: inline-block;
+    margin-left: 1rem;
+    max-height: 10rem;
+    max-width: 8rem;
+    min-height: 10rem;
+
+    &:first-child {
+      display: block;
+      max-height: inherit;
+      max-width: 100%;
+    }
+
+
+
+
+    @include xxs-device {
+      &:first-child {
+        margin: 2rem auto;
+      }
+    }
+
+
+    img {
+      margin: 1rem auto;
+      text-align: center;
+
+      @include xxs-device {
+        width: 25rem;
+
+      }
+    }
+  }
+
+  &__content {
+    color: $gris;
+  }
+
+  &__btn--mobile {
+
+    &.open {
+        > .dropdown-menu {
+          width: 100%;
+
+          > .active {
+            a {
+              background-color: $gris-dark;
+              color: $blanco;
+            }
+          }
+
+          li {
+            a {
+              color: $gris;
+              font-size: 1.8rem;
+              line-height: 2;
+            }
+          }
+        }
+
+        > .dropdown-toggle {
+          &.btn-primary {
+            &:hover {
+              background-color: $gris-dark;
+            }
+          }
+        }
+      }
+
+
+    @include sm-device {
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    @include md-device {
+      display: none;
+    }
+  }
+
+  &__btn--desktop {
+    @include xxs-device {
+      display: none;
+    }
+
+    @include md-device {
+      display: inline-block;
+    }
+  }
+
+
+}
+
+#loft {
+  .col-xs-12 {
+    &:first-child {
+      div {
+        display: none;
+      }
+    }
+  }
+}

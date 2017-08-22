@@ -1,0 +1,16 @@
+.map {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__container {
+    width: 100%;
+    @include xxs-device {
+      height: 30rem;
+    }
+    @include sm-device {
+      height: 40rem;
+    }
+  }
+}

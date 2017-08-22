@@ -1,0 +1,75 @@
+.navbar {
+  &-brand {
+    height: auto;
+
+    @include sm-device {
+      padding-bottom: .6rem;
+      padding-top: .6rem;
+    }
+  }
+
+  &-default {
+    background-color: $blanco;
+    border-color: rgba($gris, .3);
+
+    .navbar-nav {
+      @include sm-device {
+        float: right;
+      }
+
+      & > .active {
+        > a {
+            background-color: rgba($rojo, .5);
+            color: $blanco;
+
+              &:focus,
+              &:hover {
+                background-color: rgba($rojo, .5);
+                color: $blanco;
+            }
+        }
+      }
+
+      > li {
+        > a {
+          color: $gris;
+          padding-bottom: 2.2rem;
+          padding-top: 2.2rem;
+
+          &:hover,
+          &:focus {
+            color: $rojo;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  &-pills {
+    > li {
+
+
+      a {
+        border: .2rem solid $verde;
+        color: $verde;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &.active {
+        a {
+          background-color: $verde;
+
+          &:hover,
+          &:focus {
+            background-color: $verde;
+          }
+        }
+      }
+    }
+  }
+}

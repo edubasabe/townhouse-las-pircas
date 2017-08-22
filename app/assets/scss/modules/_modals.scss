@@ -1,0 +1,43 @@
+.modal {
+  .hero__form {
+    @include xxs-device {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  &-backdrop {
+    &.in {
+      opacity: .8;
+    }
+  }
+
+}
+
+#form-cotizacion {
+  .modal {
+    &.in {
+      .modal-dialog {
+        transform: translateY(25%);
+      }
+    }
+
+    &-content {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    &-header {
+      border: 0;
+    }
+  }
+
+  button {
+    &.close {
+      height: 3rem;
+      opacity: 1;
+      width: 3rem;
+    }
+  }
+}

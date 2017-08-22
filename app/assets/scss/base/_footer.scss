@@ -1,0 +1,12 @@
+.footer {
+  background-color: $negro;
+  color: $blanco;
+
+  p {
+    margin: 1.2rem 0;
+
+    @include xxs-device {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.hero {
+  background: url('../images/background/hero@2x.jpg') no-repeat center;
+  overflow: hidden;
+  position: relative;
+
+  @include xxs-device {
+    background-size: cover;
+    height: 77vh;
+    margin-top: -2px;
+  }
+
+  @include sm-device {
+    height: 91.2vh;
+  }
+
+  @include md-device {
+    height: 66rem;
+  }
+
+
+  &__device {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    @include xxs-device {
+      display: none;
+    }
+
+    @include xs-device {
+      bottom: -6rem;
+      display: block;
+      transform: scale(.46);
+      transform-origin: left bottom;
+    }
+
+    @include sm-device {
+      transform: scale(1);
+    }
+
+    @include md-device {
+      transform: scale(.8);
+    }
+  }
+
+  &__logo {
+    p {
+       @include xxs-device {
+         margin-bottom: 0;
+       }
+
+       img {
+         @include xxs-device {
+           transform: scale(.8);
+         }
+       }
+    }
+
+
+    @include xxs-device {
+      margin: 3rem auto;
+      margin-top: 1rem;
+    }
+
+    @include sm-device {
+      display: block;
+      margin: 6rem auto;
+    }
+
+    @include md-device {
+      margin: 6rem auto;
+    }
+
+    &__headline {
+      text-shadow: 0 0 .3rem rgba($negro, .4);
+
+      @include xxs-device {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__cta {
+    @include xxs-device {
+      display: block;
+    }
+
+    @include sm-device {
+      display: none;
+    }
+  }
+
+  &__form {
+    background: rgba($blanco, .8);
+    border-radius: .4rem;
+    box-shadow: 0 .1rem .6rem  rgba($negro, .5);
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2rem 3rem;
+
+    legend {
+      border: 0;
+      color: $gris-dark;
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    input {
+      border-radius: .3rem;
+      font-size: 1.6rem;
+      min-height: 4.4rem;
+    }
+
+    textarea {
+      border-radius: .3rem;
+      font-size: 1.6rem;
+    }
+
+    .btn {
+      background: $rojo;
+      border: 0;
+      border-radius: .4rem;
+      font-weight: 500;
+
+      &:active {
+        background: rgba($rojo, .8);
+      }
+    }
+    @include xxs-device {
+      display: none;
+      margin-bottom: 4rem;
+    }
+    @include sm-device {
+      display: block;
+      margin: 6rem auto;
+    }
+    @include md-device {
+      margin: 6rem auto;
+    }
+
+    .form-group {
+      label {
+        &.error {
+          color: $verde;
+        }
+      }
+    }
+  }
+}

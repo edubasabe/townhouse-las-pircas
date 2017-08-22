@@ -1,0 +1,59 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+
+  @include xxs-device {
+    margin-top: 8.3rem;
+  }
+
+  @include sm-device {
+    margin-top: 6.5rem;
+  }
+}
+
+.text-color--verde {
+  color: $verde;
+}
+
+.text-color--gris {
+  color: $gris;
+}
+
+.text-color--gris-dark {
+  color: $gris-dark;
+}
+
+.btn {
+  &-primary {
+    background-color: $rojo;
+    border: 0;
+    border-radius: .4rem;
+    transition: all 250ms ease;
+
+    &:hover {
+      background-color: rgba($rojo, .8);
+    }
+
+    &:active {
+      background-color: rgba($rojo, .5) !important;
+    }
+
+    &:focus {
+      background-color: $rojo;
+    }
+  }
+
+  &-group {
+    .btn {
+      &-primary {
+        &:active {
+          background-color: $rojo;
+        }
+
+        &:focus {
+          background-color: $rojo;
+        }
+      }
+    }
+  }
+}

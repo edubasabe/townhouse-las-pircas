@@ -1,0 +1,18 @@
+.sala-ventas {
+  background: url('../images/background/bg-ventas.jpg') no-repeat center -2px;
+  background-size: cover;
+
+  @include xxs-device {
+    background-size: cover;
+  }
+
+  b,
+  p,
+  a,
+  address {
+    color: $blanco;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 .3rem rgba($negro, .5);
+  }
+}
